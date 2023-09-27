@@ -1,3 +1,35 @@
 // ----------------------------------------------------------------------------------
 // This file contains all styles related to the home page of the site/application.
 // ----------------------------------------------------------------------------------
+
+// styling body
+body
+    @include setDisplay($ver: flex-start)
+    text-align: center
+
+// main content of the page
+main
+    margin-top: 30px
+    width: 375px
+
+    .logo-image > img
+        margin-left: 32px
+        height: 20px
+
+    .hero-image
+        margin-top: 34px
+
+    .info
+        margin: 0 30px
+        h1
+            margin-top: 64px
+            line-height: 1
+
+            em
+                display: block
+
+        p
+            margin-top: 16px
+
+        form
+            margin-top: 30px

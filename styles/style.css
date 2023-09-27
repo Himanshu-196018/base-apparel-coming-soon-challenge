@@ -70,4 +70,100 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", Sans-serif;
+}
+body h1 {
+  font-size: 42px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+body h1 em {
+  font-style: normal;
+  font-weight: 200;
+}
+body p {
+  font-size: 15px;
+  word-spacing: -3px;
+}
+body form input {
+  font-weight: 600;
+  font-size: 14px;
+}
+body footer {
+  font-size: 14px;
+}
+
+footer {
+  margin: 50px 0 20px;
+}
+
+form {
+  position: relative;
+  text-align: left;
+}
+form input {
+  width: 98%;
+  height: 50px;
+  border-radius: 25px;
+  padding-left: 22px;
+}
+form .error-image {
+  position: absolute;
+  top: 13px;
+  right: 80px;
+}
+form button {
+  position: absolute;
+  right: 0;
+}
+form #email-error {
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
+}
+
+main {
+  margin-top: 30px;
+  width: 375px;
+}
+main .logo-image > img {
+  margin-left: 32px;
+  height: 20px;
+}
+main .hero-image {
+  margin-top: 34px;
+}
+main .info {
+  margin: 0 30px;
+}
+main .info h1 {
+  margin-top: 64px;
+  line-height: 1;
+}
+main .info h1 em {
+  display: block;
+}
+main .info p {
+  margin-top: 16px;
+}
+main .info form {
+  margin-top: 30px;
+}
+
+button {
+  width: 65px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  padding-left: 27px;
 }/*# sourceMappingURL=style.css.map */
