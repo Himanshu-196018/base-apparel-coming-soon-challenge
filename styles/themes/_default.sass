@@ -2,3 +2,37 @@
 // When having several themes, this file contains everything related to the
 // default one.
 // -----------------------------------------------------------------------------
+
+body
+    background-image: $bg-gradient
+
+main
+
+    h1
+        color: $dark-grayish-red
+
+    em, p
+        color: $desaturated-red
+
+    form
+        input
+            background-image: $bg-gradient
+            border: 1px solid $desaturated-red
+            outline: none
+
+        input:focus
+            color: $dark-grayish-red
+            border: 2px solid $soft-red
+
+        input::placeholder
+            color: $desaturated-red
+            opacity: 0.5
+
+button
+    background-image: $button-bg-gradient
+    box-shadow: 0 10px 30px $desaturated-red
+
+    &:hover
+        cursor: pointer
+        background-color: $button-hover-bg
+        background-image: none
