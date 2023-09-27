@@ -13,7 +13,61 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Base Apparel</title>
+    <title>Base Apparel coming soon page</title>
   </head>
-  <body></body>
+  <body>
+    <!-- main content of the page -->
+    <main>
+      <!-- logo of the page -->
+      <div class="logo-image">
+        <img src="images/logo.svg" alt="" />
+      </div>
+
+      <!-- hero image of the page -->
+      <picture class="hero-image">
+        <source media="(min-width: 900px)" srcset="images/hero-desktop.jpg" />
+        <img src="images/hero-mobile.jpg" alt="" />
+      </picture>
+
+      <!-- info section  -->
+      <section class="info">
+        <h1><em>We're</em>coming soon</h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form action="">
+          <div class="email-input">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+
+            <div class="error-image">
+              <img src="images/icon-error.svg" alt="" />
+            </div>
+
+            <button type="submit">
+              <img src="images/icon-arrow.svg" alt="" />
+            </button>
+
+            <label for="email" id="email-error"></label>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- footer section of the page -->
+    <footer>
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Himanshu-196018">@Himanshu</a>.
+      </p>
+    </footer>
+  </body>
 </html>
