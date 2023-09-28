@@ -116,8 +116,10 @@ footer a {
 }
 
 form {
-  position: relative;
   text-align: left;
+}
+form .email-input {
+  position: relative;
 }
 form input {
   width: 98%;
@@ -125,7 +127,8 @@ form input {
   border-radius: 25px;
   padding: 0 100px 0 25px;
 }
-form .error-image {
+form #error-image {
+  display: none;
   position: absolute;
   top: 13px;
   right: 80px;
@@ -133,9 +136,11 @@ form .error-image {
 form button {
   position: absolute;
   right: 0;
+  top: 0;
 }
 form #email-error {
-  margin-left: 25px;
+  display: none;
+  margin: 3px 0 0 25px;
   font-size: 14px;
 }
 
@@ -146,9 +151,9 @@ form #email-error {
     border-radius: 28px;
     padding: 0 140px 0 30px;
   }
-  form .error-image {
+  form #error-image {
     top: 16px;
-    right: 110px;
+    right: 130px;
   }
   form #email-error {
     margin-left: 30px;
@@ -201,7 +206,7 @@ main .info form {
   }
   main .logo-image > img {
     margin: 64px 0 0 164px;
-    max-height: 34px;
+    height: 34px;
   }
   main .hero-image {
     margin: 0;
@@ -273,6 +278,9 @@ main form input::-moz-placeholder {
 main form input::placeholder {
   color: hsl(0, 36%, 70%);
   opacity: 0.5;
+}
+main form #email-error {
+  color: hsl(0, 93%, 68%);
 }
 
 button {

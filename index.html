@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/action.js" defer></script>
     <title>Base Apparel coming soon page</title>
   </head>
   <body>
@@ -37,7 +38,7 @@
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <form action="">
+        <form name="suborm">
           <div class="email-input">
             <input
               type="email"
@@ -46,15 +47,15 @@
               placeholder="Email Address"
             />
 
-            <div class="error-image">
+            <div id="error-image">
               <img src="images/icon-error.svg" alt="" />
             </div>
 
-            <button type="submit">
+            <button type="submit" title="Send" id="submit-button">
               <img src="images/icon-arrow.svg" alt="" />
             </button>
 
-            <label for="email" id="email-error"></label>
+            <p id="email-error">Please enter a valid email</p>
           </div>
         </form>
       </section>
