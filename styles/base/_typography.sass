@@ -9,10 +9,10 @@ body
         family: $text-font-stack
 
     h1
-        font:
-            size: 42px
+        font-size: 42px
         letter-spacing: 10px
         text-transform: uppercase
+        line-height: 1
 
         em
             font-style: normal
@@ -22,11 +22,20 @@ body
         font-size: 15px
         word-spacing: -3px
 
-    form
-        input
-            font:
-                weight: 600
-                size: 14px
-
     footer
         font-size: 14px
+
+@media screen and ( width > 1300px )
+    main
+        .info
+            h1
+                font-size: 60px
+                letter-spacing: 20px
+                line-height: 1.2
+
+            em
+                line-height: 1
+
+            p
+                line-height: 1.87
+                word-spacing: 3px

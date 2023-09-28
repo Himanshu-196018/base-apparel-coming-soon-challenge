@@ -80,6 +80,7 @@ body h1 {
   font-size: 42px;
   letter-spacing: 10px;
   text-transform: uppercase;
+  line-height: 1;
 }
 body h1 em {
   font-style: normal;
@@ -89,14 +90,24 @@ body p {
   font-size: 15px;
   word-spacing: -3px;
 }
-body form input {
-  font-weight: 600;
-  font-size: 14px;
-}
 body footer {
   font-size: 14px;
 }
 
+@media screen and (width > 1300px) {
+  main .info h1 {
+    font-size: 60px;
+    letter-spacing: 20px;
+    line-height: 1.2;
+  }
+  main .info em {
+    line-height: 1;
+  }
+  main .info p {
+    line-height: 1.87;
+    word-spacing: 3px;
+  }
+}
 footer {
   margin: 50px 0 20px;
 }
@@ -128,6 +139,21 @@ form #email-error {
   font-size: 14px;
 }
 
+@media screen and (width > 1300px) {
+  form input {
+    width: 100%;
+    height: 56px;
+    border-radius: 28px;
+    padding: 0 140px 0 30px;
+  }
+  form .error-image {
+    top: 16px;
+    right: 110px;
+  }
+  form #email-error {
+    margin-left: 30px;
+  }
+}
 body {
   display: grid;
   justify-content: center;
@@ -136,11 +162,11 @@ body {
 }
 
 main {
-  margin-top: 30px;
   width: 375px;
+  min-height: 100vh;
 }
 main .logo-image > img {
-  margin-left: 32px;
+  margin: 30px 0 0 32px;
   height: 20px;
 }
 main .hero-image {
@@ -151,7 +177,6 @@ main .info {
 }
 main .info h1 {
   margin-top: 64px;
-  line-height: 1;
 }
 main .info h1 em {
   display: block;
@@ -163,6 +188,41 @@ main .info form {
   margin-top: 30px;
 }
 
+@media screen and (width > 1300px) {
+  main {
+    width: 100vw;
+    margin: 0;
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px auto;
+    text-align: left;
+  }
+  main .logo-image > img {
+    margin: 64px 0 0 164px;
+    max-height: 34px;
+  }
+  main .hero-image {
+    margin: 0;
+    width: 610px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  main .info {
+    margin: 70px 80px 0 166px;
+  }
+  main .info h1 {
+    max-width: 400px;
+  }
+  main .info p {
+    max-width: 440px;
+    margin-top: 20px;
+  }
+  main .info form {
+    margin-top: 40px;
+  }
+}
 button {
   width: 65px;
   height: 50px;
@@ -171,8 +231,24 @@ button {
   padding-left: 27px;
 }
 
+@media screen and (width > 1300px) {
+  button {
+    width: 100px;
+    height: 56px;
+    border-radius: 28px;
+    padding-left: 45px;
+  }
+}
 body {
   background-image: linear-gradient(235deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+@media screen and (width > 1300px) {
+  body {
+    background-image: url("../images/bg-pattern-desktop.svg"), linear-gradient(235deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+  }
 }
 
 main h1 {

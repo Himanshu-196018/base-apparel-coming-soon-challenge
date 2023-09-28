@@ -5,7 +5,11 @@
 
 body
     background-image: $bg-gradient
-
+    @media screen and (width > 1300px)
+        background-image: $bg-image-url, $bg-gradient
+        background-repeat: no-repeat
+        background-position: left top
+        background-size: contain
 main
 
     h1
