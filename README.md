@@ -23,7 +23,7 @@ This is a solution to the [Base Apparel Coming Soon Page challenge on Frontend M
 ### Links
 
 - Solution URL: [Solution](https://github.com/Himanshu-196018/base-apparel-coming-soon-challenge)
-- Live Site URL: [Demo/site](DEMO LINK)
+- Live Site URL: [Demo/site](https://himanshu-196018.github.io/base-apparel-coming-soon-challenge/)
 
 ## My process
 
